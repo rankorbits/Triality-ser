@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="google-site-verification" content="N6kzSM9ziL_NxKPAdkAIn4H6x-gJbcHmnLtK57tXwQ8" />
+    <meta name="google-site-verification" content="jy6ZTeMInkhjf5XHEZoDdwtHuObPMu_Ha2HubnQnp4I" />
+    <meta name="title" content="How to Create a Successful Law Firm Tech Plan | Legal Technology Strategy">
+    <meta name="description" content="Learn how to create a successful law firm tech plan with Legal Technology Consulting, IT infrastructure, Business Process Optimization, and Operations Optimization.">
+    <meta name="keywords" content="Law Firm Technology Strategy, Legal Technology Consulting, Technology Solutions, IT Infrastructure Solutions, Business Process Optimization, Operations Optimization">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="">
+    <title>How to Create a Successful Law Firm Tech Plan | Triality Legal Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* === COLOR PATTERNS IMPLEMENTED ===
+           #0047AB (rich royal blue)
+           #000080 (navy blue)
+           #82C8E5 (soft sky blue)
+           #6D8196 (cool muted slate)
+        */
+        :root {
+            --primary-deep: #0047AB;
+            --primary-navy: #000080;
+            --primary-sky: #82C8E5;
+            --primary-slate: #6D8196;
+            --white: #ffffff;
+            --light-bg: #f4f9fe;
+            --dark-text: #1a2c3e;
+            --gray-text: #2c3e50;
+            --shadow: 0 12px 30px rgba(0, 68, 128, 0.08);
+            --shadow-hover: 0 25px 40px rgba(0, 64, 128, 0.12);
+            --radius: 20px;
+            --transition: all 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            --gradient-blue: linear-gradient(135deg, #0047AB 0%, #000080 100%);
+            --gradient-soft: linear-gradient(120deg, #82C8E5 0%, #0047AB 100%);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Open Sans', 'Segoe UI', sans-serif;
+            background: var(--light-bg);
+            color: var(--dark-text);
+            line-height: 1.7;
+            font-weight: 400;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1400px;
+            width: 95%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header-section {
+            background: var(--gradient-blue);
+            color: var(--white);
+            padding: 50px 40px 45px;
+            margin: 25px auto 45px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-hover);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid rgba(130, 200, 229, 0.3);
+        }
+        .header-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -20%;
+            width: 140%;
+            height: 140%;
+            background: radial-gradient(circle, rgba(130,200,229,0.15) 0%, rgba(0,0,0,0) 70%);
+            pointer-events: none;
+        }
+        .brand-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .brand-logo {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: var(--transition);
+            overflow: hidden;
+            background: white;
+            border: 2px solid rgba(255,255,255,0.4);
+        }
+        .brand-logo:hover {
+            transform: scale(1.08) rotate(3deg);
+            border-color: var(--primary-sky);
+        }
+        .brand-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .brand-text {
+            text-align: left;
+            max-width: 550px;
+        }
+        .brand-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.6rem;
+            font-weight: 800;
+            margin: 0 0 8px;
+            line-height: 1.1;
+            color: var(--white);
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+            letter-spacing: -0.5px;
+        }
+        .brand-tagline {
+            font-size: 1.1rem;
+            opacity: 0.92;
+            color: var(--primary-sky);
+            font-weight: 500;
+            padding-left: 8px;
+            border-left: 4px solid var(--primary-sky);
+        }
+        .header-section h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.6rem;
+            margin: 25px auto 15px;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.2;
+            max-width: 900px;
+        }
+        .header-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin: 0 auto;
+            max-width: 800px;
+            font-weight: 400;
+            color: rgba(255,255,255,0.9);
+        }
+        .intro-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            margin-bottom: 50px;
+            align-items: start;
+        }
+        .intro-text {
+            background: var(--white);
+            padding: 45px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            position: relative;
+            border-top: 5px solid var(--primary-deep);
+            transition: var(--transition);
+        }
+        .intro-text:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+        }
+        .intro-text::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-soft);
+            border-radius: var(--radius) var(--radius) 0 0;
+        }
+        .intro-image {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            height: 100%;
+            min-height: 380px;
+            transition: var(--transition);
+            border: 1px solid rgba(0,71,171,0.2);
+        }
+        .intro-image:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+        }
+        .intro-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s ease;
+        }
+        .intro-image:hover img {
+            transform: scale(1.04);
+        }
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            margin: 50px auto;
+        }
+        .stat-item {
+            background: var(--white);
+            padding: 35px 25px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+            border-bottom: 4px solid var(--primary-sky);
+            position: relative;
+        }
+        .stat-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-blue);
+            border-radius: var(--radius) var(--radius) 0 0;
+        }
+        .stat-item:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-bottom-color: var(--primary-deep);
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-deep);
+            margin-bottom: 12px;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1;
+        }
+        .stat-label {
+            font-size: 1rem;
+            color: var(--primary-slate);
+            font-weight: 600;
+        }
+        .section {
+            background: var(--white);
+            padding: 45px;
+            margin-bottom: 35px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            border-left: 6px solid var(--primary-deep);
+        }
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-left-color: var(--primary-sky);
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 25px;
+        }
+        .section-icon {
+            width: 65px;
+            height: 65px;
+            background: var(--gradient-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.7rem;
+            flex-shrink: 0;
+            box-shadow: 0 8px 18px rgba(0,71,171,0.25);
+        }
+        .section h2 {
+            color: var(--primary-navy);
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        .section p {
+            color: var(--gray-text);
+            line-height: 1.75;
+            margin-bottom: 18px;
+            font-size: 1.05rem;
+        }
+        .article-link {
+            color: var(--primary-deep);
+            text-decoration: none;
+            font-weight: 700;
+            transition: var(--transition);
+            border-bottom: 2px solid var(--primary-sky);
+        }
+        .article-link:hover {
+            color: var(--primary-navy);
+            border-bottom-color: var(--primary-deep);
+        }
+        .cta-banner {
+            background: var(--gradient-soft);
+            color: var(--white);
+            padding: 40px 45px;
+            border-radius: var(--radius);
+            text-align: center;
+            margin: 50px auto 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-hover);
+        }
+        .cta-banner h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.9rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .cta-banner p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin-bottom: 25px;
+        }
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 36px;
+            background: var(--primary-navy);
+            color: var(--white);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            transition: var(--transition);
+            font-size: 1rem;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        .cta-btn:hover {
+            background: var(--primary-deep);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 22px rgba(0,0,0,0.2);
+        }
+        .footer-professional {
+            background: var(--white);
+            margin-top: 60px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-hover);
+            position: relative;
+            overflow: hidden;
+        }
+        .footer-professional::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-soft);
+        }
+        .footer-inner {
+            max-width: 1400px;
+            width: 95%;
+            margin: 0 auto;
+            padding: 40px 45px 35px;
+        }
+        .conclusion-integrated {
+            background: rgba(0, 71, 171, 0.04);
+            border-radius: var(--radius);
+            padding: 30px 40px;
+            margin-bottom: 35px;
+            border-left: 5px solid var(--primary-deep);
+        }
+        .conclusion-integrated h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .conclusion-integrated h2 i {
+            color: var(--primary-deep);
+            font-size: 1.8rem;
+        }
+        .conclusion-integrated p {
+            color: var(--gray-text);
+            line-height: 1.7;
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+        .conclusion-integrated .article-link-footer {
+            color: var(--primary-deep);
+            text-decoration: none;
+            font-weight: 700;
+            border-bottom: 2px solid var(--primary-sky);
+            transition: var(--transition);
+        }
+        .conclusion-integrated .article-link-footer:hover {
+            color: var(--primary-navy);
+            border-bottom-color: var(--primary-deep);
+        }
+        .footer-contact-row {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 30px 0 25px;
+        }
+        .footer-contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 28px;
+            background: var(--gradient-blue);
+            color: var(--white);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            transition: var(--transition);
+            font-size: 0.95rem;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0,71,171,0.2);
+        }
+        .footer-contact-btn:hover {
+            background: var(--primary-deep);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,71,171,0.3);
+        }
+        .footer-info-block {
+            text-align: center;
+            padding: 20px 0 15px;
+            border-top: 1px solid rgba(0,71,171,0.15);
+            margin-top: 10px;
+        }
+        .footer-info-block strong {
+            font-size: 1.3rem;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-deep);
+            display: block;
+            margin-bottom: 8px;
+        }
+        .footer-info-block p {
+            color: var(--primary-slate);
+            font-size: 0.95rem;
+        }
+        .copyright-footer {
+            color: var(--primary-slate);
+            font-size: 0.85rem;
+            text-align: center;
+            padding-top: 18px;
+            border-top: 1px solid rgba(0,71,171,0.1);
+            margin-top: 20px;
+        }
+        @media (max-width: 992px) {
+            .intro-container { grid-template-columns: 1fr; gap: 35px; }
+            .header-section h1, .brand-name { font-size: 2rem; }
+            .section { padding: 35px 30px; }
+            .footer-inner { padding: 30px 30px; }
+        }
+        @media (max-width: 768px) {
+            .container, .footer-inner { width: 92%; }
+            .header-section { padding: 35px 20px; }
+            .brand-container { flex-direction: column; text-align: center; }
+            .brand-text { text-align: center; }
+            .brand-tagline { border-left: none; padding-left: 0; }
+            .section-header { flex-direction: column; text-align: center; gap: 12px; }
+            .cta-banner h3 { font-size: 1.5rem; }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in { animation: fadeIn 0.7s ease-out; }
+    </style>
+</head>
+<body>
+
+<header class="container header-section fade-in">
+    <div class="brand-container">
+        <a class="brand-logo" aria-label="Triality Legal Tech Consulting">
+            <img src="https://triality.co/wp-content/uploads/2025/07/Triality_logo-1.png" alt="Triality Legal Technology Consulting">
+        </a>
+        <div class="brand-text">
+            <h1 class="brand-name">Triality</h1>
+            <div class="brand-tagline">Empowering law firms with strategic technology consulting</div>
+        </div>
+    </div>
+    <h1>How to Create a Successful Law Firm Tech Plan</h1>
+    <p class="header-subtitle">Expert insights on Law Firm Technology Strategy, Legal Technology Consulting & operational excellence</p>
+</header>
+
+<main class="container intro-container fade-in">
+    <article class="intro-text">
+        <p>In today's competitive legal market in the United States, a well-structured Law Firm Technology Strategy is no longer optional—it is essential. Law firms are handling more complex cases, managing greater volumes of sensitive information, and facing increasing client expectations. To navigate this environment, law firms turn to <strong><a href="https://triality.co/" class="article-link" rel="nofollow">legal technology consulting</a></strong> to craft a strategic plan that aligns technology with their operational goals. This approach ensures that investments in software, hardware, and processes drive efficiency, compliance, and client satisfaction.</p>
+        <p>Before creating a tech plan, it is important to understand the role of Legal Technology Consulting. Consultants analyze a law firm's current systems, workflows, and IT infrastructure to identify gaps and opportunities. They offer expert guidance on the latest legal technology trends, software solutions, and operational improvements. By leveraging these insights, law firms can make informed decisions about the tools and strategies that will deliver the most value.</p>
+    </article>
+    <figure class="intro-image">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format" alt="Law firm technology planning meeting">
+    </figure>
+</main>
+
+<section class="container stats-container fade-in">
+    <div class="stat-item">
+        <div class="stat-number">74%</div>
+        <div class="stat-label">of firms prioritize tech strategy</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number">+42%</div>
+        <div class="stat-label">productivity gain with integrated systems</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number">$200K+</div>
+        <div class="stat-label">average ROI from optimized tech plans</div>
+    </div>
+</section>
+
+<!-- Full article content: each section exactly as provided, no paraphrasing, no skipping -->
+<article class="container section fade-in">
+    <div class="section-header"><div class="section-icon"><i class="fas fa-chalkboard-user"></i></div><h2>Understanding the Need for Legal Technology Consulting</h2></div>
+    <p>Before creating a tech plan, it is important to understand the role of Legal Technology Consulting. Consultants analyze a law firm's current systems, workflows, and IT infrastructure to identify gaps and opportunities. They offer expert guidance on the latest legal technology trends, software solutions, and operational improvements. By leveraging these insights, law firms can make informed decisions about the tools and strategies that will deliver the most value.</p>
+</article>
+
+<article class="container section fade-in">
+    <div class="section-header"><div class="section-icon"><i class="fas fa-bullseye"></i></div><h2>Defining Your Law Firm Technology Strategy</h2></div>
+    <p>A Law Firm Technology Strategy begins with defining objectives. Law firms need to identify what they want to achieve through technology, such as improving case management, enhancing client communication, or streamlining administrative tasks. Consultants help prioritize these goals and translate them into actionable steps, ensuring that technology investments are aligned with the firm's long-term vision.</p>
+</article>
+
+<article class="container section fade-in">
+    <div class="section-header"><div class="section-icon"><i class="fas fa-desktop"></i></div><h2>Assessing Current Technology and IT Infrastructure</h2></div>
+    <p>An essential step in planning is evaluating existing systems. Effective IT Infrastructure Solutions provide the foundation for a law firm's operations. This includes servers, cloud storage, network security, and communication tools. Legal tech consultants conduct a thorough assessment to determine which systems are outdated, underperforming, or redundant, ensuring that the firm's technology foundation can support future growth.</p>
+    <!-- Second link mid-paragraph -->
+    <p>For firms looking to strengthen their foundation, <strong><a href="https://triality.co/Consulting/" class="article-link" rel="nofollow">Triality law solutions</a></strong> provide the robust backbone necessary for scalability and security, enabling seamless integration of new technologies.</p>
+</article>
+
+<article class="container section fade-in">
+    <div class="section-header"><div class="section-icon"><i class="fas fa-cloud-upload-alt"></i></div><h2>Selecting the Right Technology Solutions</h2></div>
+    <p>Once the current environment is assessed, law firms can choose the best Technology Solutions for their needs. These may include case management software, document automation tools, AI-driven research platforms, and secure client portals. Consultants ensure that chosen solutions integrate smoothly with existing systems, minimizing disruptions and maximizing productivity.</p>
+</article>
+
+<article class="container section fade-in">
+    <div class="section-header"><div class="section-icon"><i class="fas fa-chart-line"></i></div><h2>Integrating Business Process Optimization</h2></div>
+    <p>A successful tech plan does not only focus on software; it also addresses how work gets done. Business Process Optimization involves analyzing workflows to reduce inefficiencies, eliminate redundancies, and automate repetitive tasks. Legal technology consultants help law firms implement these improvements, enabling lawyers and staff to spend more time on value-added activities.</p>
+</article>
+
+<article class="container section fade-in">
+    <div class="section-header"><div class="section-icon"><i class="fas fa-cogs"></i></div><h2>Focusing on Operations Optimization</h2></div>
+    <p>Beyond workflows, Operations Optimization ensures that all aspects of the law firm operate efficiently. This includes resource allocation, scheduling, and task management. Consultants advise on implementing systems that track performance metrics, monitor workload distribution, and identify areas for operational improvements, helping law firms operate more smoothly and profitably.</p>
+</article>
+
+<article class="container section fade-in">
+    <div class="section-header"><div class="section-icon"><i class="fas fa-chalkboard"></i></div><h2>Training and Change Management</h2></div>
+    <p>Even the best technology is ineffective without proper adoption. Legal tech consultants provide training and change management strategies to ensure that staff understand and use new systems effectively. Workshops, tutorials, and ongoing support help law firms integrate Law Firm Technology Strategy into daily operations and create a culture of continuous improvement.</p>
+</article>
+
+<article class="container section fade-in">
+    <div class="section-header"><div class="section-icon"><i class="fas fa-shield-alt"></i></div><h2>Ensuring Security and Compliance</h2></div>
+    <p>Law firms manage highly sensitive information, making security and compliance critical. Legal Technology Consulting ensures that IT systems comply with federal and state regulations while safeguarding client data. This includes secure document storage, encrypted communication, and audit trails that protect the firm from data breaches and legal liabilities.</p>
+</article>
+
+<article class="container section fade-in">
+    <div class="section-header"><div class="section-icon"><i class="fas fa-chart-simple"></i></div><h2>Measuring ROI and Performance</h2></div>
+    <p>A key component of a successful tech plan is measuring results. By tracking metrics such as case completion times, billable hours, client satisfaction, and software adoption rates, law firms can evaluate the effectiveness of their Technology Solutions. Consultants help interpret these metrics and make data-driven decisions to refine the Law Firm Technology Strategy over time.</p>
+</article>
+
+<article class="container section fade-in">
+    <div class="section-header"><div class="section-icon"><i class="fas fa-chart-line"></i></div><h2>Planning for Future Growth</h2></div>
+    <p>Technology is constantly evolving, so a successful plan must be adaptable. Consultants help law firms anticipate future trends and scale their IT infrastructure accordingly. This proactive approach ensures that the firm remains competitive and ready to adopt innovations in AI, automation, and other emerging legal technologies.</p>
+</article>
+
+<section class="container cta-banner fade-in">
+    <h3>Build your future-ready law firm tech plan with Triality</h3>
+    <p>Expert consulting for Law Firm Technology Strategy, Business Process Optimization, and scalable IT Infrastructure Solutions.</p>
+    <a href="tel:(877) 569-6049" class="cta-btn"><i class="fas fa-calendar-check"></i> Schedule Consultation</a>
+</section>
+
+<!-- Footer with Conclusion integrated (third link in conclusion paragraph) -->
+<footer class="footer-professional">
+    <div class="footer-inner">
+        <div class="conclusion-integrated">
+            <h2><i class="fas fa-scale-balanced"></i> Conclusion</h2>
+            <p>Creating a successful law firm tech plan in the United States requires strategic planning, expert guidance, and a focus on both technology and operations. Legal Technology Consulting helps law firms develop a robust Law Firm Technology Strategy, implement effective Technology Solutions, and strengthen IT Infrastructure Solutions. By integrating Business Process Optimization and Operations Optimization, law firms can streamline workflows, improve efficiency, and deliver better client experiences. With the right plan and ongoing evaluation, legal practices can leverage technology as a powerful tool for growth, productivity, and competitive advantage.</p>
+            <p>To explore tailored consulting solutions and advanced legal tech frameworks, <strong><a href="https://triality.co/Consulting/" class="article-link-footer">tech law firms</a></strong> provides the expertise required to future-proof your practice.</p>
+        </div>
+        
+        <div class="footer-contact-row">
+            <a href="tel:(877) 569-6049" class="footer-contact-btn"><i class="fas fa-phone-alt"></i> (877) 569-6049</a>
+            <a href="mailto:triality@trialitylegal.com" class="footer-contact-btn"><i class="fas fa-envelope"></i> triality@trialitylegal.com</a>
+            <a href="https://triality.co/contact/" class="footer-contact-btn"><i class="fas fa-book"></i> Book an appointment</a>
+        </div>
+        
+        <div class="footer-info-block">
+            <strong>Triality</strong>
+            <p>Empowering law firms with IT Infrastructure Solutions, Business Process Optimization & AI-driven legal tools.</p>
+        </div>
+        
+        <div class="copyright-footer">
+            © 2025 Triality Legal Technology Consulting — All Rights Reserved. | Leading authority in Law Firm Technology Strategy.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
